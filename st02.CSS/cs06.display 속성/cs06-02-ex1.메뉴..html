@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        hr {
+            clear: both;
+        }
+    ul.parent {
+        float: left;
+    }
+    ul.ch>li {
+        float: left;
+    }
+    </style>
+</head>
+
+<body>
+    <pre>
+        float 속성이 적용되는 태그를 이해하고자 한다.
+        float 속성은 자기 자신에게만 적용된다. 
+        즉, 자식이나 자속에게는 적용되지 않는다.
+    </pre>
+    <h2>기준 1</h2>
+    <ul class="base">
+        <li><a href="#"></a> 메뉴1-1</li>
+        <li><a href="#"></a> 메뉴1-2</li>
+        <li><a href="#"></a> 메뉴1-3</li>
+    </ul>
+    <ul class="base">
+        <li><a href="#"></a> 메뉴2-1</li>
+        <li><a href="#"></a> 메뉴2-2</li>
+        <li><a href="#"></a> 메뉴2-3</li>
+    </ul>
+
+    <hr>
+    <h2>부모 1</h2>
+    <ul class="parent">
+        <li><a href="#"></a> 메뉴1-1</li>
+        <li><a href="#"></a> 메뉴1-2</li>
+        <li><a href="#"></a> 메뉴1-3</li>
+    </ul>
+    <ul class="parent">
+        <li><a href="#"></a> 메뉴2-1</li>
+        <li><a href="#"></a> 메뉴2-2</li>
+        <li><a href="#"></a> 메뉴2-3</li>
+    </ul>
+
+    <hr>
+    <h2>자식 2</h2>
+    <ul class="ch">
+        <li><a href="#"></a> 메뉴1-1</li>
+        <li><a href="#"></a> 메뉴1-2</li>
+        <li><a href="#"></a> 메뉴1-3</li>
+    </ul>
+    <ul class="ch">
+        <li><a href="#"></a> 메뉴2-1</li>
+        <li><a href="#"></a> 메뉴2-2</li>
+        <li><a href="#"></a> 메뉴2-3</li>
+    </ul>
+
+</body>
+
+</html>

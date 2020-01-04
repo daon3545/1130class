@@ -3,6 +3,37 @@
 <head>
     <meta charset="utf-8">
     <title>border radius</title>
+    <style>
+    div.box1,.box2,.box3,.box4,.box5 {
+        width: 200px;
+        height: 100px;
+        background-color: white;
+        border: solid 3px;
+        margin: 20px;
+    }
+    div>.box1 {
+        border-radius: 10px;
+    }
+    div>.box2 {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 20px;
+    }
+    div>.box3 {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 40px;
+        border-bottom-left-radius: 50px;
+    }
+    div>.box4 {
+        border-top-left-radius: 30px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 80px;
+        border-bottom-left-radius: 50px;
+    }
+ 
+    </style>
 </head>
 <body>
     <div id="borderradius">
@@ -14,4 +45,4 @@
         <div class="box5"> </div>
     </div>
 </body>
-</html>
+</html>
