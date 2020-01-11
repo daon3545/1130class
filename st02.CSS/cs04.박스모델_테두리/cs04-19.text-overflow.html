@@ -1,22 +1,27 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>text-overflow</title>
     <style>
-    div.a {
-        width: 100px;
-        border: 2px solid green;
-        white-space: nowrap; /*줄바꿈이 안되게*/
-        overflow: hidden; /*태그영역 벗어나는 텍스트 감주기*/
-        text-overflow:ellipsis; /*생략기호 표시*/
-    }
-    div.a:hover {
-        white-space: normal;
-        overflow: visible; 
-         
-    }
+        div.a {
+            width: 100px;
+            border: 2px solid green;
+            white-space: nowrap;
+            /*줄바꿈이 안되게*/
+            overflow: hidden;
+            /*태그영역 벗어나는 텍스트 감주기*/
+            text-overflow: ellipsis;
+            /*생략기호 표시*/
+        }
+
+        div.a:hover {
+            white-space: normal;
+            overflow: visible;
+        }
     </style>
 </head>
+
 <body>
     <h1>The text-overflow</h1>
 
@@ -24,4 +29,5 @@
 
     <div class="a">This is some long text that will not fit in the box.</div>
 </body>
+
 </html>

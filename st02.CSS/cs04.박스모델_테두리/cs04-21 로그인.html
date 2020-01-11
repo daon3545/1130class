@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        @import url(http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+
+        * {
+            font-family: 'Nanum Myeongjo', serif;
+        }
+
+        h1 {
+            font-size: 22px
+        }
+
+        label {
+            width: 120px;
+            display: inline-block;
+            padding: 10px;
+        }
+
+        input[type='button'] {
+            width: 60px;
+            height: 60px;
+            margin-top: 10px;
+        }
+
+        #login {
+            padding-left: 50px;
+            padding-right: 20px;
+            float: left;
+        }
+
+        .item {
+            width: 20px;
+            display: inline-block;
+        }
+
+        #cc {
+            clear: both;
+            padding-left: 55px;
+        }
+
+        #center {
+            margin: auto;
+            width: 500px;
+            /*div로 묶어서 센터로 고정 맞추기*/
+        }
+    </style>
+</head>
+
+<body>
+    <h1>로그인</h1>
+    <fieldset>
+        <div id="center">
+            <div>
+                <div id="login">
+                    <div>
+                        <label for="id">아이디</label>
+                        <input type="text" placeholder="id를 입력하세요">
+                    </div>
+                    <div>
+                        <label for="">패스워드</label>
+                        <input type="password" placeholder="패스워드를 입력하세요">
+                    </div>
+                </div>
+                <input type="button" value="로그인">
+            </div>
+            <div id="cc">
+                <input type="checkbox">
+                <label for="">아이디 저장</label>
+            </div>
+            <ul>
+                <li class="item"></li><a href="#">회원가입</a></li>
+                <li class="item"></li><a href="#">아이디 찾기</a>
+                <li class="item"></li><a href="#">비밀번호 찾기</a>
+            </ul>
+        </div>
+    </fieldset>
+</body>
+
+</html>
