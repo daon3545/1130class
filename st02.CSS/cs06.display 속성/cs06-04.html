@@ -1,19 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>display 속성</title>
+    <style>
+        li {
+            display: inline-block;
+            margin-left: -6px; /*6픽셀 이동은 마진으로 옮길 수 있다.*/
+            text-align:center;
+            line-height: 80px;
+        }
+        .red_1 {
+            width: 100px;
+            height: 80px;
+            border-top-left-radius: 30px;
+            border-bottom-left-radius: 30px;
+            background-color: red;
+        }
+
+        .red {
+            width: 100px;
+            height: 80px;
+            background-color: red;
+        }
+        .green {
+            width: 100px;
+            height: 80px;
+            background-color: green;
+        }
+        .green_1 {
+            width: 100px;
+            height: 80px;
+            border-top-right-radius: 30px;
+            border-bottom-right-radius: 30px;
+            background-color: green;
+        }
+    </style>
 </head>
+
 <body>
     <ul>
-        <li>1번째</li>
-        <li>2번째</li>
-        <li>3번째</li>
-        <li>4번째</li>
-        <li>5번째</li>
-        <li>6번째</li>
-        <li>7번째</li>
-        <li>8번째</li>
+        <li class="red_1">1번째</li>
+        <li class="green">2번째</li>
+        <li class="red">3번째</li>
+        <li class="green">4번째</li>
+        <li class="red">5번째</li>
+        <li class="green">6번째</li>
+        <li class="red">7번째</li>
+        <li class="green_1">8번째</li>
     </ul>
 </body>
+
 </html>

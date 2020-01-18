@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>자식>자식>자식></title>
+    <style>
+        /* common  초기화 */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul,
+        li {
+            list-style-type: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a {
+            color: gray
+        }
+
+        div {
+            margin: 100px 50px 0 100px;
+        }
+
+
+        /*menu1*/
+
+        /* menu2 */
+
+        #menu2>li {
+            float: left;
+            position: relative;
+        }
+
+        #menu2::after {
+            clear: both;
+            display: block;
+            content: '';
+        }
+
+        #menu2>li>a {
+            display: block;
+            text-align: center;
+            border: 1px lightgray solid;
+            width: 100px;
+            height: 30px;
+            line-height: 30px;
+            background-color: white;
+        }
+
+        #menu2>li>a:hover {
+            background-color: black;
+            color: white;
+        }
+
+        #menu2>li:nth-child(n+1) {
+            margin-left: -1px;
+        }
+
+        #menu2>li>ul {
+            display: none;
+            position: absolute;
+        }
+
+        #menu2>li:hover>ul {
+            display: block;
+        }
+
+        #menu2>li>ul>li:hover {
+            display: block;
+            background-color: lightgrey;
+        }
+
+        #menu2>li>ul>li>a {
+            display: block;
+            text-align: center;
+            border: 1px lightgray solid;
+            border-top: 0px;
+            width: 100px;
+            height: 30px;
+            line-height: 30px;
+            background-color: white;
+        }
+
+        #menu2>li>ul>li>a:hover {
+            background-color: lightgrey;
+        }
+
+
+
+        /* menu2 */
+
+        #menu3>li {
+            float: left;
+            position: relative;
+        }
+
+        #menu3::after {
+            clear: both;
+            display: block;
+            content: '';
+        }
+
+        #menu3>li>a {
+            display: block;
+            text-align: center;
+            border: 1px lightgray solid;
+            width: 100px;
+            height: 30px;
+            line-height: 30px;
+            background-color: white;
+        }
+
+        #menu3>li>a:hover {
+            background-color: black;
+            color: white;
+        }
+
+        #menu3>li:nth-child(n+1) {
+            margin-left: -1px;
+        }
+
+        #menu3>li>ul {
+            display: none;
+            position: absolute;
+            width: 460px;
+        }
+
+        #menu3>li:hover>ul {
+            display: block;
+        }
+
+        #menu3>li>ul>li:hover {
+            display: block;
+            background-color: lightgrey;
+        }
+
+        #menu3>li>ul>:nth-child(n+1) {
+       margin-left: -1px;
+        }
+        #menu3>li>ul>li {float: left; margin-top: -1px;}
+        #menu3>li>ul>li>a {
+            display: block;
+            text-align: center;
+            border: 1px lightgray solid;
+            width: 100px;
+            height: 30px;
+            line-height: 30px;
+            background-color: white;
+        }
+
+        #menu3>li>ul>li>a:hover {
+            background-color: lightgrey;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <ul id="menu1">
+            <li><a href="#">MENU1</a>
+                <ul>
+                    <li><a href="#">MENU1-1</a></li>
+                    <li><a href="#">MENU1-2</a></li>
+                    <li><a href="#">MENU1-3</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">MENU2</a>
+                <ul>
+                    <li><a href="#">MENU2-1</a></li>
+                    <li><a href="#">MENU2-2</a></li>
+                    <li><a href="#">MENU2-3</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">MENU3</a>
+                <ul>
+                    <li><a href="#">MENU3-1</a></li>
+                    <li><a href="#">MENU3-2</a></li>
+                    <li><a href="#">MENU3-3</a></li>
+                </ul>
+            </li>
+        </ul> <!-- float 해제 -->
+    </div>
+
+    <div>
+        <ul id="menu2">
+            <li>
+                <a href="#">MENU4</a>
+                <ul>
+                    <li><a href="#">MENU4-1</a></li>
+                    <li><a href="#">MENU4-2</a></li>
+                    <li><a href="#">MENU4-3</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#">MENU5</a>
+                <ul>
+                    <li><a href="#">MENU5-1</a></li>
+                    <li><a href="#">MENU5-2</a></li>
+                    <li><a href="#">MENU5-3</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#">MENU6</a>
+                <ul>
+                    <li><a href="#">MENU6-1</a></li>
+                    <li><a href="#">MENU6-2</a></li>
+                    <li><a href="#">MENU6-3</a></li>
+                </ul>
+            </li>
+        </ul> <!-- float 해제 -->
+    </div>
+
+    <div>
+        <ul id="menu3">
+            <li><a href="#">MENU7</a>
+                <ul>
+                    <li><a href="#">MENU7-1</a></li>
+                    <li><a href="#">MENU7-2</a></li>
+                    <li><a href="#">MENU7-3</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">MENU8</a>
+                <ul>
+                    <li><a href="#">MENU8-1</a></li>
+                    <li><a href="#">MENU8-2</a></li>
+                    <li><a href="#">MENU8-3</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">MENU9</a>
+                <ul>
+                    <li><a href="#">MENU9-1</a></li>
+                    <li><a href="#">MENU9-2</a></li>
+                    <li><a href="#">MENU9-3</a></li>
+                </ul>
+            </li>
+        </ul> <!-- float 해제 -->
+    </div>
+</body>
+
+</html>

@@ -3,6 +3,26 @@
 <head>
     <meta charset="utf-8">
     <title>position</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    #pos1 {
+        background-color: bisque;
+    }
+    #pos2 {
+        background-color: burlywood;
+    }
+    #pos3 {
+        background-color: cadetblue;
+    }
+    #pos2 {
+        position: relative; /*부모를 기준으로 설정*/
+        left: 200px;/*x축으로 200픽셀 */
+        top: 100px;/*y축으로 100픽셀 */
+    }
+    </style>
 </head>
 <body>
     <div id="wrap">
@@ -11,4 +31,4 @@
         <div id="pos3">세번째</div>
     </div>
 </body>
-</html>
+</html>

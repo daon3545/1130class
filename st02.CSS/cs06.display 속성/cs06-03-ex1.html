@@ -3,6 +3,44 @@
 <head>
     <meta charset="utf-8">
     <title>display 속성</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+    .ex1 {
+        width: 100px;
+        height: 100px;
+        background-color: darkturquoise;
+    }
+    .ex2 {
+        width: 100px;
+        height: 100px;
+        background-color: slateblue;
+    }
+    .ex3 {
+        width: 100px;
+        height: 100px;
+        background-color: tomato;
+    }
+
+    #float>div {
+        float: left;
+    }
+    #float::after {
+        clear: both;
+        display: block;
+        content: '';
+    }
+
+    #inlineblock>div {
+        display: inline-block;
+    }
+
+    #flex {
+        display: flex;
+    }
+    </style>
 </head>
 <body>
 
@@ -27,4 +65,4 @@
         <div class="ex3">세번째</div>
     </div>
 </body>
-</html>
+</html>

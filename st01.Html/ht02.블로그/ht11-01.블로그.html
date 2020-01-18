@@ -6,7 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="../reset.css">
     <style>
+        body {
+            background-color: lightgrey;
+            padding: 60px;
+        }
+
+        #box {
+            width: 800px;
+            margin: auto;
+            padding: 30px;
+            background-color: white;
+            border: 1px white solid;
+            border-radius: 10px;
+        }
+
+        li {
+            list-style: none;
+        }
+
+
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            padding-top: 10px;
+            padding-left: 40px;
+            line-height: 20pt;
+        }
+
+        h2 {
+            font-size: 12pt;
+            line-height: 0pt;
+            padding-left: 40px;
+            padding-bottom: 40px;
+        }
+
         #nav_left {
             float: left;
         }
@@ -28,95 +62,153 @@
 
         .nav_left_li {
             display: inline-block;
+            text-indent: 20px;
             with: 100px
         }
 
         footer {
             clear: both;
         }
-        
+
+        #nav_right>.search {
+            width: 110px;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border: 1.5px solid gainsboro;
+            height: 20px;
+            padding: 0 0 0 10px;
+            float: left;
+            outline: none;
+        }
+
+        #nav_right>.submit {
+            font-size: 8pt;
+            height: 20px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            list-style-position: outside;
+            border: 1.5px solid gainsboro;
+            float: left;
+            outline: none;
+            border-left-style: none;
+        }
+
+        #line {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-top: 1px gray solid;
+            border-bottom: 1px gray solid;
+        }
+
+        #line::after {
+            clear: both;
+            display: block;
+            content: '';
+        }
+
+        .h1_1 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 25px;
+            padding-top: 30px;
+            margin: 0;
+        }
     </style>
 
 </head>
 
 <body>
-    <header>
+    <div id="box">
+        <header>
+            <div>
+                <h1>HTML5 Example Preview</h1>
+                <h2>한빛아카데미</h2>
+        </header>
+
+        <nav>
+            <div id="line">
+                <ul id="nav_left">
+                    <li class="nav_left_li">HTML5</li>
+                    <li class="nav_left_li">CSS3</li>
+                    <li class="nav_left_li">JavaScript</li>
+                </ul>
+                <ul>
+                    <form id="nav_right" action="">
+                        <input class="search" type="search" name="" id="">
+                        <input class="submit" type="submit" value="검색"></form>
+                </ul>
+            </div>
+
+        </nav>
+
         <div>
-            <h1>HTML5 Example Preview</h1>
-            <h2>한빛아카데미</h2>
-    </header>
+            <section id="main_section">
+                <p class="h1_1">HTML5 개요와 활용</p>
+                <p>2013년 02월 14일</p>
 
-    <nav>
-        <ul id="nav_left">
-            <li class="nav_left_li">HTML5</li>
-            <li class="nav_left_li">CSS3</li>
-            <li class="nav_left_li">JavaScript</li>
-        </ul>
-        <form id="nav_right" action=""><input type="search" name="" id="">
-            <input type="submit" value="검색"></form>
-    </nav>
+                <img src="http://placehold.it/430x280" alt="">
 
-    <div>
-        <section id="main_section">
-            <h1>HTML5 개요와 활용</h1>
-            <p>2013년 02월 14일</p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo justo ac lorem pretium
+                    vitae
+                    rhoncus
+                    lectus ullamcorper. Aliquam facilisis euismod diam sollicitudin commodo. Nunc sagittis sapien
+                    venenatis
+                    lorem
+                    vestibulum cursus pellentesque mi sodales. Donec pellentesque hendrerit turpis, vitae tempor nibh
+                    ultricies at.
+                    Aliquam consequat rutrum erat, vel sodales tellus sagittis at. Proin sollicitudin augue eu augue
+                    vehicula vitae
+                    bibendum odio porta. Aliquam elit arcu, venenatis in imperdiet ut, scelerisque non dolor. Donec in
+                    vulputate
+                    tortor. Fusce egestas rutrum mi quis ultricies. Vivamus blandit augue ac felis ullamcorper
+                    consectetur.
+                    Curabitur pretium fringilla neque, vitae cursus massa auctor vitae. Integer non massa sit amet lacus
+                    accumsan
+                    blandit. Vivamus fermentum tellus at justo iaculis eu tempus lorem venenatis. Suspendisse quis eros
+                    consectetur
+                    tellus posuere commodo. In hac habitasse platea dictumst.
+                </p>
 
-            <img src="http://placehold.it/430x280" alt="">
+                <p>
+                    Praesent orci quam, ornare sed scelerisque ac, porta a justo. Pellentesque quis magna sed magna
+                    vehicula
+                    semper
+                    ac ut enim. Duis ut mattis ligula. Mauris at sem elit. Vestibulum justo tortor, malesuada non
+                    tincidunt
+                    quis,
+                    feugiat ut metus. Maecenas varius neque ut diam ultrices scelerisque. Praesent lectus massa,
+                    tincidunt
+                    vel
+                    adipiscing non, vehicula ut magna. Cras quis lacinia ipsum. Sed consequat consectetur volutpat.
+                    Integer
+                    sed
+                    tortor risus. Donec accumsan ante vel justo porttitor volutpat.
+                </p>
+            </section>
 
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo justo ac lorem pretium vitae
-                rhoncus
-                lectus ullamcorper. Aliquam facilisis euismod diam sollicitudin commodo. Nunc sagittis sapien venenatis
-                lorem
-                vestibulum cursus pellentesque mi sodales. Donec pellentesque hendrerit turpis, vitae tempor nibh
-                ultricies at.
-                Aliquam consequat rutrum erat, vel sodales tellus sagittis at. Proin sollicitudin augue eu augue
-                vehicula vitae
-                bibendum odio porta. Aliquam elit arcu, venenatis in imperdiet ut, scelerisque non dolor. Donec in
-                vulputate
-                tortor. Fusce egestas rutrum mi quis ultricies. Vivamus blandit augue ac felis ullamcorper consectetur.
-                Curabitur pretium fringilla neque, vitae cursus massa auctor vitae. Integer non massa sit amet lacus
-                accumsan
-                blandit. Vivamus fermentum tellus at justo iaculis eu tempus lorem venenatis. Suspendisse quis eros
-                consectetur
-                tellus posuere commodo. In hac habitasse platea dictumst.
-            </p>
+            <aside>
+                <h3>카테고리</h3>
+                <ul>
+                    <li><a href="http://www.naver.com">데이터</a></li>
+                    <li><a href="http://www.naver.com">데이터</a></li>
+                    <li><a href="http://www.naver.com">데이터</a></li>
+                    <li><a href="http://www.naver.com">데이터</a></li>
+                    <li><a href="http://www.naver.com">데이터</a></li>
+                </ul>
+                <h3>최근 글</h3>
+                <ul>
+                    <li><a href="http://www.naver.com">데이터</a></li>
+                    <li><a href="http://www.naver.com">데이터</a></li>
+                    <li><a href="http://www.naver.com">데이터</a></li>
+                    <li><a href="http://www.naver.com">데이터</a></li>
+                </ul>
+            </aside>
+        </div>
 
-            <p>
-                Praesent orci quam, ornare sed scelerisque ac, porta a justo. Pellentesque quis magna sed magna vehicula
-                semper
-                ac ut enim. Duis ut mattis ligula. Mauris at sem elit. Vestibulum justo tortor, malesuada non tincidunt
-                quis,
-                feugiat ut metus. Maecenas varius neque ut diam ultrices scelerisque. Praesent lectus massa, tincidunt
-                vel
-                adipiscing non, vehicula ut magna. Cras quis lacinia ipsum. Sed consequat consectetur volutpat. Integer
-                sed
-                tortor risus. Donec accumsan ante vel justo porttitor volutpat.
-            </p>
-        </section>
-
-        <aside>
-            <h3>카테고리</h3>
-            <ul>
-                <li><a href="http://www.naver.com">데이터</a></li>
-                <li><a href="http://www.naver.com">데이터</a></li>
-                <li><a href="http://www.naver.com">데이터</a></li>
-                <li><a href="http://www.naver.com">데이터</a></li>
-                <li><a href="http://www.naver.com">데이터</a></li>
-            </ul>
-            <h3>최근 글</h3>
-            <ul>
-                <li><a href="http://www.naver.com">데이터</a></li>
-                <li><a href="http://www.naver.com">데이터</a></li>
-                <li><a href="http://www.naver.com">데이터</a></li>
-                <li><a href="http://www.naver.com">데이터</a></li>
-            </ul>
-        </aside>
+        <footer>
+            <a href="http://www.naver.com">Created By Team-HeXagon</a>
+        </footer>
     </div>
-
-    <footer>
-        <a href="http://www.naver.com">Created By Team-HeXagon</a>
-    </footer>
 </body>
 
 </html>
