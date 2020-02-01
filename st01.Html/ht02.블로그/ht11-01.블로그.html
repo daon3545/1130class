@@ -60,12 +60,6 @@
             width: 20%;
         }
 
-        .nav_left_li {
-            display: inline-block;
-            text-indent: 20px;
-            with: 100px
-        }
-
         footer {
             clear: both;
         }
@@ -112,6 +106,37 @@
             padding-top: 30px;
             margin: 0;
         }
+
+        #nav_left > li {
+            float: left;
+            position: relative; 
+            width: 80px;    
+            text-align: center;
+        }
+        #nav_left::after {
+            clear: both;
+            display: block;
+            content: '';
+        }
+        #nav_left > li > ul {
+            display: ;
+            position: absolute;
+        }
+        #nav_left > li:hover > ul {
+            display: block;
+        }
+
+        #nav_left > li > ul > li > a {
+            width: 80px;
+            line-height: 30px;
+            background-color: white;
+            display: block;
+            text-align: center;
+            border: 1px lightgray solid;            
+        }
+        #nav_left > li > ul > li >a:hover {
+            background-color: lightgrey;
+        }
     </style>
 
 </head>
@@ -127,9 +152,28 @@
         <nav>
             <div id="line">
                 <ul id="nav_left">
-                    <li class="nav_left_li">HTML5</li>
-                    <li class="nav_left_li">CSS3</li>
-                    <li class="nav_left_li">JavaScript</li>
+                    <li class="nav_left_li">
+                        HTML5
+                        <ul>
+                            <li class="inner-menu-item"><a href="#">데이터</a></li>
+                            <li class="inner-menu-item"><a href="#">데이터</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav_left_li">CSS3
+                        <ul>
+                            <li class="inner-menu-item"><a href="#">데이터</a></li>
+                            <li class="inner-menu-item"><a href="#">데이터</a></li>
+                            <li class="inner-menu-item"><a href="#">데이터</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav_left_li">JavaScript
+                        <ul>
+                            <li class="inner-menu-item"><a href="#">데이터</a></li>
+                            <li class="inner-menu-item"><a href="#">데이터</a></li>
+                            <li class="inner-menu-item"><a href="#">데이터</a></li>
+                            <li class="inner-menu-item"><a href="#">데이터</a></li>
+                        </ul>
+                    </li>
                 </ul>
                 <ul>
                     <form id="nav_right" action="">

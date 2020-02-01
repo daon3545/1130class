@@ -11,3 +11,133 @@ label { cursor:pointer; }
 .blind,legend,hr,caption { display:block; overflow:hidden; position:absolute; top:0; left:-1000em; }
 i,em,address { font-style:normal; font-weight:normal; }
 
+
+/* CSS */
+
+
+body {
+    background-image: url(../images/bg2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-width: 100%;
+}
+
+header>img {
+    float: left;
+    width: 50px;
+    height: auto;
+    margin-left: 5px;
+}
+#header_left {
+    font-size: 20pt;
+    font-weight:bold;
+    font-family: "arial";
+    padding: 10px;
+    padding-top: 12px;
+}
+
+#wrap {
+    width: 960px;
+    margin: auto;
+    /*border: 1px solid white;*/
+    margin-top: 20px;
+}
+
+header>div>ul>li {
+    float: left;
+    list-style-type: none;
+}
+header>div>ul>li>a {
+    font-size: 10pt;
+    display: block;
+    width: 70px;
+    text-align: center;
+    border: 1px lightgray solid;
+    line-height: 25px;
+    margin: 2px;
+
+    background-color: white;
+}
+.search {
+    margin: 2px;
+    height: 25px;
+    margin-left: 20px;
+}
+.submit {
+    margin: 2px;
+    height: 25px;
+    margin-left: -8px;
+    padding: 5px;
+}
+
+header>.search_right {
+    float: right;
+    
+}
+
+header::after {
+    clear: both;
+    display: block;
+    content: '';
+}
+
+
+#header_left {
+    float: left;
+}
+
+#header_right {
+    float: right;
+}
+
+#mainmenu {
+    background-color: white;
+    padding: 10px;
+    margin-top: 30px;
+    background-color: #ffffff;
+        background-color: rgba( 255, 255, 255, 0.5 );
+}
+
+#mainmenu>li {
+    float: left;
+    margin-right: 30px;
+    font-size: 10pt;
+}
+
+#mainmenu::after {
+    clear: both;
+    display: block;
+    content: '';
+}
+#content {
+    width: 960px;
+    height: 500px;
+}
+
+footer {
+    width: 960px;
+    height: 120px;
+    background-color: white;
+    background-color: #ffffff;
+        background-color: rgba( 255, 255, 255, 0.5 );
+}
+
+#footer_left {
+    float: left;
+    text-align:left;
+    padding: 20px;
+}
+#footer_right {
+    float: right;
+    text-align:right;
+    padding: 20px;
+    line-height: 20px;
+    font-size: 8pt;
+    width: 300px;
+}
+footer::after {
+    clear: both;
+    display: block;
+    content: '';
+}

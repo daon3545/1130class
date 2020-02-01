@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!--공통 css 임포트-->
+    <link rel="stylesheet" href="./css/default.css">
+
+    <!-- 개별 css 작성 -->
+    <style>
+        html,
+        body,#wrap {
+            height: 100%;
+            /*꽉찬화면 만들때 중요*/
+        }
+
+        #contents {
+            height: calc(100% - 50px /*헤더 높이*/ - 43px/*나브 높이*/ - 120px/*푸터높이*/
+                );
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            <img src="./images/logo.png" alt="로고">
+            <div id="header_left">CHANEL</div>
+            <div id="header_right">
+                <ul>
+                    <li><a href="#">홈</a></li>
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">회원가입</a></li>
+                    <li>
+                        <form id="search_right" action="">
+                            <input class="search" type="search" name="" id="">
+                            <input class="submit" type="submit" value="검색">
+                        </form>
+
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <!--플로트 해제-->
+        <nav>
+            <ul id="mainmenu">
+                <li class="menu"><a href="#">ABOUT</a></li>
+                <li class="menu"><a href="#">GALLERY</a></li>
+                <li class="menu"><a href="#">OFFICE</a></li>
+                <li class="menu"><a href="#">SERVICE</a></li>
+                <li class="menu"><a href="#">CONTACT</a></li>
+            </ul>
+        </nav>
+        <!--플로트 해제-->
+        <div id="contents">
+            contents
+        </div>
+        <footer>
+            <div id="footer_left">
+                <img src="./images/footer-home.png" alt="">
+                <img src="./images/footer-facebook.png" alt="">
+                <img src="./images/footer_google.png" alt="">
+            </div>
+            <div id="footer_right">
+                <img src="./images/footer-phone.png" alt="">
+                031-899-9100<br>
+                ㈜웹퍼블리셔반 대표이사 김윤경 사업자번호 222-88-66666<br>
+                경기도 용인시 기흥구 용구대로 2311 경기도여성능력개발센타<br>
+                Copyright © ACG Inc. All Rights Reserved
+            </div>
+        </footer>
+        <!--플로트 해제-->
+    </div>
+</body>
+
+</html>

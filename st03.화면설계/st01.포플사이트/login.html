@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!--공통 css 임포트-->
+    <link rel="stylesheet" href="./css/default.css">
+
+    <!-- 개별 css 작성 -->
+    <style>
+        html,
+        body,
+        #wrap {
+            height: 100%;
+            /*꽉찬화면 만들때 중요*/
+        }
+
+        #contents {
+            height: calc(100% - 50px
+                    /*헤더 높이*/
+                    - 43px
+                    /*나브 높이*/
+                    - 120px
+                    /*푸터높이*/
+                );
+        }
+
+        fieldset {
+            font-size: 10pt;
+            margin-top: 100px;
+            margin: auto;
+            width: 700px;
+            height: 400px;
+            background-color:white;
+            
+        }
+
+        fieldset> #center {
+            margin-top: 100px;
+        }
+
+        label {
+            width: 70px;
+            display: inline-block;
+            padding-top: 15px;
+            
+        }
+
+        input {
+            text-indent
+            width: 160px;
+            height: 20px;
+            border: 1px solid gainsboro;
+            margin-top: 10px;
+        }
+
+        input[type='button'] {
+            width: 60px;
+            height: 55px;
+            border: 1px solid gainsboro;
+            margin-top: 10px;
+            margin-left: -10px;
+        }
+
+        #login {
+            padding-left: 50px;
+            padding-right: 20px;
+            float: left;
+        }
+
+        .item {
+            width: 20px;
+            display: inline-block;
+            padding: 0px 0px 0px 30px;
+            
+            
+        }
+
+        #cc {
+            clear: both;
+            padding-left: 50px;
+            margin-bottom: 30px;
+        }
+
+        #center {
+            margin: auto;
+            width: 500px;
+            /*div로 묶어서 센터로 고정 맞추기*/
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            <img src="./images/logo.png" alt="로고">
+            <div id="header_left">CHANEL</div>
+            <div id="header_right">
+                <ul>
+                    <li><a href="#">홈</a></li>
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">회원가입</a></li>
+                    <li>
+                        <form id="search_right" action="">
+                            <input class="search" type="search" name="" id="">
+                            <input class="submit" type="submit" value="검색">
+                        </form>
+
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <!--플로트 해제-->
+        <nav>
+            <ul id="mainmenu">
+                <li class="menu"><a href="#">ABOUT</a></li>
+                <li class="menu"><a href="#">GALLERY</a></li>
+                <li class="menu"><a href="#">OFFICE</a></li>
+                <li class="menu"><a href="#">SERVICE</a></li>
+                <li class="menu"><a href="#">CONTACT</a></li>
+            </ul>
+        </nav>
+        <!--플로트 해제-->
+        <div id="contents">
+            <fieldset>
+                <div id="center">
+                    <div>
+                        <div id="login">
+                            <div>
+                                <label for="id">아이디</label>
+                                <input type="text" placeholder="id를 입력하세요">
+                            </div>
+                            <div>
+                                <label for="">패스워드</label>
+                                <input type="password" placeholder="패스워드를 입력하세요">
+                            </div>
+                        </div>
+                        <input type="button" value="로그인">
+                    </div>
+                    <div id="cc">
+                        <input type="checkbox">
+                        <label for="">아이디 저장</label>
+                    </div>
+                    <ul>
+                        <li class="item"></li><a href="#">회원가입</a></li>
+                        <li class="item"></li><a href="#">아이디 찾기</a>
+                        <li class="item"></li><a href="#">비밀번호 찾기</a>
+                    </ul>
+                </div>
+            </fieldset>
+        </div>
+        <footer>
+            <div id="footer_left">
+                <img src="./images/footer-home.png" alt="">
+                <img src="./images/footer-facebook.png" alt="">
+                <img src="./images/footer_google.png" alt="">
+            </div>
+            <div id="footer_right">
+                <img src="./images/footer-phone.png" alt="">
+                031-899-9100<br>
+                ㈜웹퍼블리셔반 대표이사 김윤경 사업자번호 222-88-66666<br>
+                경기도 용인시 기흥구 용구대로 2311 경기도여성능력개발센타<br>
+                Copyright © ACG Inc. All Rights Reserved
+            </div>
+        </footer>
+        <!--플로트 해제-->
+    </div>
+</body>
+
+</html>
